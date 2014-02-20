@@ -1,0 +1,14 @@
+name: "ajmendez"
+description: "Random bits of code and thoughts."
+author :
+  name : Alexander Mendez
+  email : blue.space@gmail.com
+  github : ajmendez
+  twitter : ajmendez
+
+url: "ajmendez.github.io"
+baseurl: ""
+markdown: redcarpet
+pygments: true
+paginate: 5
+permalink: date

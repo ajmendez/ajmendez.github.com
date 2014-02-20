@@ -1,0 +1,22 @@
+<h3>Alexander Mendez</h3>
+
+<img src="{{ site.baseurl }}/assets/ajmendez.jpg" id="me">
+<div class='sidebar-nav'>
+<ul class="icons">
+  <li><a href='https://github.com/ajmendez'><i class='fa fa-lg fa-github-square '></i></a></li>
+  <li><a href='https://twitter.com/ajmendez'><i class='fa fa-lg fa-twitter-square'></i></a></li>
+  <li><a href='https://flickr.com/photos/pxddn'><i class='fa fa-lg fa-flickr'></i></a></li>
+  <li><a href='https://www.tumblr.com/blog/ajmendez'><i class='fa fa-lg fa-tumblr-square'></i></a></li>
+  <li></li>
+  <li><a href='https://profiles.google.com/bluespace'><i class='fa fa-lg fa-google-plus-square'></i></a></li>
+  <li><a href='https://www.linkedin.com/in/ajmendez'><i class='fa fa-lg fa-linkedin-square'></i></a></li>
+  <li><a href='https://facebook.com/ajmendez'><i class='fa fa-lg fa-facebook-square'></i></a></li>
+  <li><a href='{{ site.baseurl }}/feed.xml'><i class='fa fa-lg fa-rss-square'></i></a></li>
+</ul>
+</div>
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+

@@ -12,3 +12,4 @@ markdown: redcarpet
 pygments: true
 paginate: 5
 permalink: date
+google: UA-22320868-3

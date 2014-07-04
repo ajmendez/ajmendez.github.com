@@ -112,7 +112,7 @@ var gfyObject = function(C) {
             t.height = gfyHeight
         }
         source = document.createElement("source");
-        source.src = gfyMp4Url;
+        source.src = gfyMp4Url.replace(/http:/g, '');
         var aR = navigator.userAgent.toLowerCase();
         if (aR.indexOf("android") > -1) {
             source.src = source.src.replace(/\.mp4/g, "-android.mp4")
@@ -121,7 +121,7 @@ var gfyObject = function(C) {
         source.className = "mp4source";
         au.appendChild(source);
         source2 = document.createElement("source");
-        source2.src = gfyWebmUrl;
+        source2.src = gfyWebmUrl.replace(/http:/g, '');
         source2.type = "video/webm";
         source2.className = "webmsource";
         au.appendChild(source2);
@@ -140,7 +140,7 @@ var gfyObject = function(C) {
     function av() {
         z = document.createElement("img");
         z.className = "gfyGif";
-        z.src = gfyGifUrl;
+        z.src = gfyGifUrl.replace(/http:/g, '');
         t.width = 0;
         t.height = 0;
         z.style.position = "absolute";

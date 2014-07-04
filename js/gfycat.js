@@ -481,10 +481,10 @@ var gfyObject = function(C) {
         o = aR.gfyItem;
         gfyWidth = o.width;
         gfyHeight = o.height;
-        gfyMp4Url = o.mp4Url;
-        gfyWebmUrl = o.webmUrl;
+        gfyMp4Url = o.mp4Url.replace(/http:/g, '');
+        gfyWebmUrl = o.webmUrl.replace(/http:/g, '');
         gfyFrameRate = o.frameRate;
-        gfyGifUrl = o.gifUrl;
+        gfyGifUrl = o.gifUrl.replace(/http:/g, '');
         K();
         if (Q() || !document.createElement("video").canPlayType) {
             av();

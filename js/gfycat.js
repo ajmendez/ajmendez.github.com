@@ -209,7 +209,7 @@ var gfyObject = function(C) {
         i.className = "gfyCtrlBox";
         aK = document.createElement("img");
         aK.className = "gfyCtrlPause";
-        aK.src = "http://assets.gfycat.com/img/pause.png";
+        aK.src = "//assets.gfycat.com/img/pause.png";
         aK.width = 15;
         aK.height = 15;
         aK.style.marginLeft = "10px";
@@ -219,7 +219,7 @@ var gfyObject = function(C) {
         a1 = document.createElement("a");
         ctrlReverse = document.createElement("img");
         ctrlReverse.className = "gfyCtrlReverse";
-        ctrlReverse.src = "http://assets.gfycat.com/img/reverse3.png";
+        ctrlReverse.src = "//assets.gfycat.com/img/reverse3.png";
         ctrlReverse.width = 15;
         ctrlReverse.height = 15;
         ctrlReverse.style.marginLeft = "6px";
@@ -230,7 +230,7 @@ var gfyObject = function(C) {
         a2 = document.createElement("a");
         V = document.createElement("img");
         V.className = "gfyCtrlSlower";
-        V.src = "http://assets.gfycat.com/img/slower.png";
+        V.src = "//assets.gfycat.com/img/slower.png";
         V.width = 15;
         V.height = 15;
         V.style.marginLeft = "13px";
@@ -241,7 +241,7 @@ var gfyObject = function(C) {
         a3 = document.createElement("a");
         ao = document.createElement("img");
         ao.className = "gfyCtrlFaster";
-        ao.src = "http://assets.gfycat.com/img/faster.png";
+        ao.src = "//assets.gfycat.com/img/faster.png";
         ao.width = 15;
         ao.height = 15;
         ao.style.marginLeft = "4px";
@@ -252,7 +252,7 @@ var gfyObject = function(C) {
         aH = document.createElement("div");
         aH.className = "gfyCtrlTabPull";
         pullTabImg = document.createElement("img");
-        pullTabImg.src = "http://assets.gfycat.com/img/pulltabsmaller.png";
+        pullTabImg.src = "//assets.gfycat.com/img/pulltabsmaller.png";
         pullTabImg.style.borderStyle = "0";
         aH.appendChild(pullTabImg);
         aH.style.position = "absolute";
@@ -312,9 +312,9 @@ var gfyObject = function(C) {
     function Z() {
         if (aj == 1) {
             if (au.paused) {
-                aK.src = "http://assets.gfycat.com/img/pause.png";
-                ao.src = "http://assets.gfycat.com/img/faster.png";
-                V.src = "http://assets.gfycat.com/img/slower.png";
+                aK.src = "//assets.gfycat.com/img/pause.png";
+                ao.src = "//assets.gfycat.com/img/faster.png";
+                V.src = "//assets.gfycat.com/img/slower.png";
                 ao.onclick = aQ;
                 V.onclick = ax
             }
@@ -470,7 +470,7 @@ var gfyObject = function(C) {
         } if (aO) {
             at = 60
         }
-        loadJSONP("http://gfycat.com/cajax/get/" + n, function(aR) {
+        loadJSONP("//gfycat.com/cajax/get/" + n, function(aR) {
             if (aR) {
                 W(aR)
             } else {}
@@ -603,16 +603,16 @@ var gfyObject = function(C) {
     function aE() {
         if (au.paused) {
             au.play();
-            this.src = "http://assets.gfycat.com/img/pause.png";
-            ao.src = "http://assets.gfycat.com/img/faster.png";
-            V.src = "http://assets.gfycat.com/img/slower.png";
+            this.src = "//assets.gfycat.com/img/pause.png";
+            ao.src = "//assets.gfycat.com/img/faster.png";
+            V.src = "//assets.gfycat.com/img/slower.png";
             ao.onclick = aQ;
             V.onclick = ax
         } else {
             au.pause();
-            this.src = "http://assets.gfycat.com/img/play.png";
-            ao.src = "http://assets.gfycat.com/img/stepforward.png";
-            V.src = "http://assets.gfycat.com/img/stepbackward.png";
+            this.src = "//assets.gfycat.com/img/play.png";
+            ao.src = "//assets.gfycat.com/img/stepforward.png";
+            V.src = "//assets.gfycat.com/img/stepbackward.png";
             ao.onclick = aw;
             V.onclick = a
         }
@@ -633,9 +633,9 @@ var gfyObject = function(C) {
     }
 
     function g() {
-        aK.src = "http://assets.gfycat.com/img/pause.png";
-        ao.src = "http://assets.gfycat.com/img/faster.png";
-        V.src = "http://assets.gfycat.com/img/slower.png";
+        aK.src = "//assets.gfycat.com/img/pause.png";
+        ao.src = "//assets.gfycat.com/img/faster.png";
+        V.src = "//assets.gfycat.com/img/slower.png";
         ao.onclick = aQ;
         V.onclick = ax;
         au.pause();
@@ -1048,7 +1048,7 @@ var gfyCounter = function() {
             return
         }
         var d = document.createElement("SCRIPT");
-        d.src = "http://tracking.gfycat.com/viewCount/" + a;
+        d.src = "//tracking.gfycat.com/viewCount/" + a;
         document.getElementsByTagName("HEAD")[0].appendChild(d)
     }
     return {

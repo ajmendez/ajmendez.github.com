@@ -17,8 +17,7 @@ categories: camera mount
 
 [Larger](http://www.gfycat.com/RipeDismalBunny#?speed=2)
 
-A few months ago I picked up a Celeston NextStar SLT mount. Slowly, with 
-a huge backlog of things that I should be doing, I have decoded the
+A few months ago I picked up a Celeston NextStar SLT mount. Slowly, I have decoded the
 serial commands for the two PIC uControllers that run the altitude and azimuth 
 motors.  The uC's control the two DC motors that drive a worm and large 
 gear to rotate the axis which then through an optical encoder gives feedback 

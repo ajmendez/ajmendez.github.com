@@ -46,7 +46,7 @@ dynamic motion through the scene.  I will be adjusting my [current mount][mount]
 to one with a quick release and possibly a ball head which will make setup easier.
 
 Right now my workflow is contained to the command line.  Odd, I know.  Roughly 
-it revolves around [gifsicle][gifsicle] and sips:
+it revolves around [gifsicle][gifsicle] and [shrink][shrink]/sips:
 
     # Resize the images (wrapper around sips that I wrote a while ago)
     # gifsicle now has the ability as you can see to do this as you can see
@@ -72,6 +72,9 @@ Here are some others:
 
 <!-- <img height="200" class="gfyitem" data-id="CircularActiveAustraliansilkyterrier" /> -->
 
+
+[shrink]:     https://github.com/ajmendez/osx_scripts/blob/master/images/shrink
+[gifsicle]:   http://www.lcdf.org/gifsicle/
 [gfycat]:     https://www.gfycat.com/
 [packet]:     https://github.com/ajmendez/graffito
 [mount]:      https://www.flickr.com/photos/pxddn/14252117420/

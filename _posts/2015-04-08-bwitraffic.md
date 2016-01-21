@@ -4,15 +4,7 @@ title:  "ADS-B BWI Traffic"
 date:   2015-4-8
 categories: SDR ADS-B radio maryland
 ---
-<script>
- (function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    // g.src = 'http://assets.gfycat.com/js/gfyajax-0.517d.js'; // 
-    g.src = '{{ site.baseurl }}/js/gfycat.js';  // paused version
-    s.parentNode.insertBefore(g, s);
-}(document, 'script'));
-</script>
+
 <img class="gfyitem" data-id="KindThreadbareLcont" />
 
 [Larger](http://www.gfycat.com/KindThreadbareLcont)

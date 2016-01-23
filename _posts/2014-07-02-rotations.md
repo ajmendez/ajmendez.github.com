@@ -4,15 +4,6 @@ title:  "Robotlandia"
 date:   2014-7-2
 categories: camera mount
 ---
-<script>
- (function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    // g.src = 'http://assets.gfycat.com/js/gfyajax-0.517d.js'; // 
-    g.src = '{{ site.baseurl }}/js/gfycat.js';  // paused version
-    s.parentNode.insertBefore(g, s);
-}(document, 'script'));
-</script>
 <img class="gfyitem" data-id="RemoteSneakyAkitainu" />
 
 [Larger](http://www.gfycat.com/RipeDismalBunny#?speed=2)

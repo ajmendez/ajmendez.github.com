@@ -44,6 +44,7 @@ img {max-width:100%;}
 .posts {
   list-style-type: none;
   margin-bottom: 2em;
+  padding-left:10px;
 }
 
 .posts li {
@@ -92,8 +93,14 @@ img {max-width:100%;}
 /*  top: 0;*/
 /*  width: 250px;*/
   list-style: none;
+  padding-left:10px;
 /*  margin: 0;
   padding: 0;*/
+}
+
+
+.sidebar-nav .icons {
+    padding: 10px;
 }
 
 .sidebar-nav ul {

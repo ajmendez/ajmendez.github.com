@@ -1,70 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{{ page.title }}</title>
-  <meta name="description" content="{{ site.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="author" href="https://plus.google.com/+AlexanderMendez1"/>
+    
+    <!-- Style -->
+    <!-- <link rel="stylesheet" href="/css/simplex_bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    
+    
+    <!-- Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  <!-- Bootstrap Simplex-->
-  <link rel="stylesheet" href="/css/simplex_bootstrap.min.css">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-      <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></sc\
-  ript>
-  <![endif]-->
+      ga('create', 'UA-22320868-3', 'auto');
+      ga('send', 'pageview');
 
-
-  <!-- syntax highlighting CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-22320868-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
-  <meta name="google-site-verification" content="WTn7OxknnOgstZsZleAvP6wPfX3dSwxE25jtQHsWHV4" />
-  
-  
+    </script>
+    <meta name="google-site-verification" content="WTn7OxknnOgstZsZleAvP6wPfX3dSwxE25jtQHsWHV4" />
 </head>
-<body>
 
-<!-- <div class="site"> -->
-<div class="header">
-  <div class="navbar navbar-default navbar-fixed-top">
-      <div class="navbar-header">
-        <a href="/" class="navbar-brand title">{{ site.name }}</a>
-        <button id="menu-toggle" type="button" >
-          <i class="fa fa-arrow-right"></i>
-        </button>
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="navbar-collapse collapse" id="navbar-main">
-        <ul class="nav navbar-nav">
-          <li><a href="{{ site.baseurl }}/about/">About</a></li>
-          <!-- <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="projects">Projects <span class="caret"></span></a>
-            <ul class="dropdown-menu" aria-labelledby="projects">
-              <li><a href="#">Nothing for now.</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Soon.</a></li> -->
-            </ul>
-          </li>
-        </ul>
-      <!-- </div> -->
+
+<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+
+<!-- Menu -->
+<nav class="menu" id="theMenu">
+    <div class="menu-wrap">
+        <h1 class="logo"><a href="index.html#home">Alexander Mendez</a></h1>
+        <img id='self' src='img/ajmendez2.jpg'>
+        <!-- <i class="icon-remove menu-close"></i> -->
+        
+        <a href="#home" class="smoothScroll">Home</a>
+        <a href="#about" class="smoothScroll">About Me</a>
+        <a href="#research" class="smoothScroll">Research</a>
+        <a href="#visualization" class="smoothScroll">Visualization</a>
+        <!-- <a href="#blog" class="smoothScroll">Blog</a> -->
+        <a href="#contact" class="smoothScroll">Contact</a>
+        <p class="centered">
+            <a href="https://github.com/ajmendez"><i class="fa fa-github-square"></i></a>
+            <a href="https://twitter.com/ajmendez"><i class="fa fa-twitter"></i></a>
+            <a href="https://flickr.com/photos/pxddn/"><i class="fa fa-flickr"></i></a>
+            <a href="https://www.linkedin.com/in/ajmendez"><i class="fa fa-linkedin"></i></a>
+            <a href="https://facebook.com/ajmendez"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://ajmendez.github.io/feed.xml"><i class="fa fa-feed"></i></a>
+            <a href="mailto:ajmendez@jhu.edu"><i class="fa fa-envelope"></i></a>
+        </p>
     </div>
-  </div>
-</div>
+    
+    <!-- Menu button -->
+    <div id="menuToggle"><i id="menuIcon" class="fa fa-chevron-right fa-chevron-left"></i></div>
+</nav>
+
+
+
+<section id="home" name="home">
+    <div id="headerwrap"></div>
+</section>

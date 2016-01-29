@@ -338,3 +338,506 @@ pre {
      word-break:normal; 
      overflow:visible;
 }
+
+
+
+
+
+
+
+
+/*
+ * Mendez
+ * Modified template from http://blacktie.co
+ */
+
+body {
+  background: url(../img/header3.jpg) no-repeat center top;
+  background-position: center top;
+  background-size:100%;
+  background-color: black;
+    font-family: "Helvetica Neue", Helvetica, serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: #777;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+/*    color: #f85c37;*/
+/*    color: #FF8080;*/
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+    position: relative;
+    display:inline-block;
+/*    z-index: -1;*/
+/*    background: url(../img/header3.jpg) no-repeat center top;*/
+    margin-top: -200px;
+    padding-top:20px;
+    margin-bottom:-50px;
+    text-align:center;
+/*    background-attachment: relative;*/
+/*    background-position: center center;*/
+    min-height: 600px;
+    width: 100%;
+    
+/*    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+}
+#headerwrap:after {
+    clear:both;
+}
+
+#headerwrap h1 {
+    margin-top: 150px;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+#headerwrap h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: 'EB Garamond', serif;
+    font-style: oblique;
+}
+
+#headerwrap .logo {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+
+/* Footer Wrap */
+
+#f {
+/*    background: rgba(0,0,0,0.1);*/
+/*    padding-top:-400px;*/
+/*    padding-top: 20px;*/
+/*    padding-bottom: 20px;*/
+    text-align: justify;
+    text-justify: inter-word;
+    
+/*    text-align: center*/
+}
+
+#f .labelbox {
+/*    display: block;*/
+    background: rgba(255,255,255,0.5);
+    padding-bottom:10px;
+    color:black;
+/*    margin-bottom: 10px;*/
+/*    margin-right:10px;*/
+/*    height: 0;*/
+/*    padding-bottom: 25%;*/
+/*    width: 25%;*/
+}
+
+#f h3 {
+/*    display: inline-block;*/
+/*    display: flex;*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    right: 0;*/
+    float: left;
+    display: inline-block;
+    
+    color: rgba(255,255,255,0.7);
+/*    font-size: 24px;*/
+/*    font-weight: 800;*/
+/*    letter-spacing: 1px;*/
+    text-transform: uppercase;
+    text-align: center;
+/*    padding: 5px;*/
+/*    margin:5px;*/
+    padding:12px;
+/*    background:#888;*/
+    background: rgba(255,255,255,0.55);
+    margin-top:10px;
+    margin-right:10px;
+    margin-bottom:5px;
+    width:50px;
+    height:50px;
+}
+
+/*#f i {
+    font-size: 8px;
+    color: #fff;
+    padding: 3px;
+}*/
+
+#f p {
+    font-size: 13pt;
+    color: black;
+}
+
+#f img {
+    text-align: center;
+}
+
+
+
+.ghost-center {
+  position: relative;
+}
+.ghost-center::before {
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  width: 1%;
+  vertical-align: middle;
+}
+.ghost-center p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+/* MENU CONF*/
+
+.menu {
+    position: fixed;
+    left: 20px;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+    text-align: left;
+}
+
+.menu.menu-open {
+    left: 210px;
+}
+
+.menu-wrap {
+    position: absolute;
+    top: 0;
+    left: -220px;
+    background: rgba(0,0,0,0.9);
+    width: 200px;
+    height: 100%;
+/*    border-right: 2px solid rgba(255,255,255,0.5);*/
+}
+
+.menu h1.logo a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.menu h1.logo a:hover {
+/*    color: #f85c37;*/
+    color: #7b7b7b;
+}
+
+.menu img.logo {
+    margin: 20px 0;
+    max-width: 160px;
+}
+
+.menu #self {
+    width: 85%;
+    margin-left:20px;
+    margin-right:10px;
+    margin-bottom: 20px;
+}
+
+
+.menu a {
+    margin-left: 20px;
+    color: #808080;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+
+.menu a:active {
+    color: #ffffff;
+}
+
+.menu a > i {
+    float: left;
+    display: inline-block;
+    vertical-align: middle; 
+    text-align: left;
+    width: 25px;
+    font-size: 14px;
+    line-height: 40px;
+/*    margin: 15px 2px;*/
+}
+
+.menu-close {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    font-size: 14px;
+    color: #808080;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 20px;
+    right: 5px;
+    -webkit-transition: all .1s ease-in-out;
+       -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+}
+
+.menu-close:hover {
+    color: #ffffff;
+    -webkit-transition: all .1s ease-in-out;
+       -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+}
+
+/* Push the body after clicking the menu button */
+.body-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+
+.body-push-toright {
+    left: 200px;
+}
+
+.body-push-toleft {
+    left: -200px;
+}
+
+.menu,
+.body-push {
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+}
+
+#menuToggle {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 11;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    background: #222;
+    -webkit-transition: all .1s ease-in-out;
+       -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+}
+
+#menuToggle:hover {
+    color: #ffffff;
+    background: #777;
+    -webkit-transition: all .1s ease-in-out;
+       -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+}
+
+.rotate {
+    writing-mode: tb-rl;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: visible;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: -100% 0%;
+    -moz-transform-origin:    -100% 0%;
+    -ms-transform-origin:     -100% 0%;
+    -o-transform-origin:      -100% 0%;
+    transform-origin:         -100% 0%;
+    
+/*    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);*/
+
+    /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+/*    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+*/
+    /* Should be unset in IE9+ I think. */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+}
+
+.contact {
+/*    display: block;*/
+    font-size: 13pt;
+/*    color: #f2f2f2;*/
+}
+
+.contact ul {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: -35px;
+    margin-top: 5px;
+/*    text-align: right;*/
+/*    width: 100px;*/
+}
+
+.contact ul li {
+/*    display: inline;*/
+/*    padding-left: 20px;*/
+}
+
+.contact ul li a {
+    display: inline-block;
+/*    width: 150px;*/
+    font-size: 13pt;
+/*    width: 1em;*/
+/*    height: 100px;*/
+}
+
+
+.portrait {
+    margin: 12px 0px 0px 12px;
+    width: 200px;
+}
+
+.leftimg {
+    margin: 6px 12px 0px 0px;
+    width: 200px;
+}
+
+.rightimg {
+    margin: 12px 0px 0px 12px;
+    width: 200px;
+}
+
+.masterTooltip {
+    text-decoration: none;
+    color: rgba(0,0,0,0.5);
+    -webkit-transition: all .1s ease-in-out;
+       -moz-transition: all .1s ease-in-out;
+        -ms-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+}
+
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#161616;
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:12px Arial;
+}
+
+
+
+.pagecontent {
+    background-color:rgba(255,255,255,0.9);
+    border-radius: 10px;
+    color:black;
+}
+

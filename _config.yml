@@ -1,15 +1,18 @@
 name: "ajmendez"
-description: "Random bits of code and thoughts."
+description: "Random bits of python and thoughts about visualization and astronomy from Alexander Mendez. "
 author :
   name : Alexander Mendez
   email : blue.space@gmail.com
   github : ajmendez
   twitter : ajmendez
 
-url: "ajmendez.github.io"
+url: "https://ajmendez.github.io"
 baseurl: ""
 markdown: redcarpet
 pygments: true
-paginate: 5
+paginate: 1
 permalink: date
 google: UA-22320868-3
+
+
+# excerpt_separator: "<!-- more -->"

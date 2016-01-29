@@ -3,6 +3,7 @@
 # information for robots and spiders
 User-agent: *
 Disallow: /tmp/
+Disallow: /structure/
 {% for node in site.pages %}{% if node.noindex %}{% assign isset = true %}Disallow: {{ node.url }}
 {% endif %}{% endfor %}
 {% comment %}{% if isset != true %}Disallow:{% endif %}{% endcomment %}

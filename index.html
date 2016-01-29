@@ -3,18 +3,69 @@ layout: default
 title: Mendez
 ---
 
+<!-- Header -->
+<a name="about"></a>
+<div class="intro-header">
+    <div class="container">
+        <div class="intro-message">
+            <h1>Alexander Mendez</h1>
+            
+            <hr class="intro-divider">
+                <div class='intro-about row'>
+                    <div class='col-lg-3 col-md-3 col-sm-4 portrait'>
+                        <img class="img-portrait img-responsive img-rounded" src='img/ajmendez2.jpg' />
+                    </div>
+                    <div class='col-lg-9 col-md-9 col-sm-8'>
+                    <p>Hi,  I am Dr. Alexander Mendez, a postdoctoral fellow at The Johns Hopkins University (JHU) working in observational astrophysics using large multi-wavelength data-sets.
+                    I study the relationship between super massive black holes (SMBHs) at different wavelengths, place galaxies within a cosmological context, and disentangle the co-evolution of SMBHs and the galaxies in which they reside.
+                    Prior to JHU, I received my doctorate in physics from the <a href="http://ucsd.edu/">University of California, San Diego</a> working with <a href="http://cass.ucsd.edu/~acoil">Professor Alison Coil</a>, and
+                    I received my Batchelor of Science degrees in Mathematics, Physics and Astronomy from the <a href="http://www.washington.edu/">University of Washington</a>. I enjoy coffee, code, and cycling.</p>
+                </div>
+            </div>
+            
+            <hr class="intro-divider">
+            <ul class="list-inline intro-social-buttons">
+                <li><a href="https://github.com/ajmendez"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ajmendez"><i class="fa fa-fw fa-2x fa-linkedin"></i></span></a>
+                    
+                <li><a href="https://www.flickr.com/photos/pxddn/"><i class="fa fa-fw fa-2x fa-flickr"></i></a></li>
+                <li><a href="https://twitter.com/ajmendez"><i class="fa fa-fw fa-2x fa-twitter "></i></a></li>
+                
+                
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% comment %}
 
 
-<div class="labelbox"><h3><i class="fa fa-user"></i></h3></div>
-<img class="portrait pull-right" src='img/ajmendez_small.jpg' />
-<p>
-Dr. Alexander Mendez, is a postdoctoral fellow at Johns Hopkins University (JHU) working on observational astrophysics using large multi-wavelength data-sets.
-His diverse interests include observing super massive black holes (SMBHs) at different wavelengths, placing galaxies within a cosmological context, and understanding the co-evolution of SMBHs and the galaxies where they reside.
-Prior to JHU, Dr. Mendez received his PhD in physics from the <a href="http://ucsd.edu/">University of California, San Diego</a> working with <a href="http://cass.ucsd.edu/~acoil">Professor Alison Coil</a>, and
-he received his Batchelor of Science degrees in Mathematics, Physics and Astronomy from the <a href="http://www.washington.edu/">University of Washington</a>.
-</p>
 
+{% assign post = site.posts.first %}
+{% assign content = post.content %}
 
+<a name="blog"></a>
+<div class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-sm-6">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Latest blog post: <a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <div class="post">{{ post.content }}</div>
+            </div>
+            <div class='more'>
+                <a href="{{ post.url | prepend: site.baseurl | replace: '//','/'}}">[Read More]</a>
+            </div>
+            
+            <!-- <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                <img class="img-responsive" src="img/ipad.png" alt="">
+            </div> -->
+        </div>
+
+    </div>
+</div>
 
 
 
@@ -28,13 +79,11 @@ he received his Batchelor of Science degrees in Mathematics, Physics and Astrono
     <p class="author">
       <span class="date">{{ post.date | date_to_long_string }}</span>
     </p>
-    <div class="content">
-      {{ post.excerpt }}
-      <div class='more'>
-          <a href={{ post.url | prepend: site.baseurl | replace: '//','/'}}>
-              [Read More]
-          </a>
-      </div>
+    <div class="col-lg-offset-1 col-lg-10">
+        {{ post.excerpt }}
+        <div class='more'>
+            <a href={{ post.url | prepend: site.baseurl | replace: '//','/'}}>[Read More]</a>
+        </div>
     </div>
   {% endfor %}
   
@@ -66,3 +115,6 @@ he received his Batchelor of Science degrees in Mathematics, Physics and Astrono
   </div>
   {% endif %}
 </div>
+
+
+{% endcomment %}

@@ -9,8 +9,8 @@ author :
 url: "https://ajmendez.github.io"
 baseurl: ""
 markdown: redcarpet
-pygments: true
-paginate: 1
+highlighter: pygments
+paginate: 5
 permalink: date
 google: UA-22320868-3
 

@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ site.description }}">
     <link rel="author" href="https://plus.google.com/+AlexanderMendez1"/>
     
     <!-- Style -->
-    <!-- <link rel="stylesheet" href="/css/simplex_bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css"> -->
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
     
     <!-- Fonts -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <!-- <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Oswald:400,300,700' > -->
+    <!-- <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=EB+Garamond' > -->
+    
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     
     
     <!-- Analytics -->
@@ -34,39 +43,26 @@
 </head>
 
 
-<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+<body>
 
 
-<!-- Menu -->
-<nav class="menu" id="theMenu">
-    <div class="menu-wrap">
-        <h1 class="logo"><a href="index.html#home">Alexander Mendez</a></h1>
-        <img id='self' src='img/ajmendez2.jpg'>
-        <!-- <i class="icon-remove menu-close"></i> -->
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <i id="menuIcon" class="fa fa-chevron-up fa-chevron-down"></i>
+            </button>
+            <a class="navbar-brand topnav" href="#"><i class="fa fa-user"></i> Alexander Mendez</a>
+        </div>
         
-        <a href="#home" class="smoothScroll">Home</a>
-        <a href="#about" class="smoothScroll">About Me</a>
-        <a href="#research" class="smoothScroll">Research</a>
-        <a href="#visualization" class="smoothScroll">Visualization</a>
-        <!-- <a href="#blog" class="smoothScroll">Blog</a> -->
-        <a href="#contact" class="smoothScroll">Contact</a>
-        <p class="centered">
-            <a href="https://github.com/ajmendez"><i class="fa fa-github-square"></i></a>
-            <a href="https://twitter.com/ajmendez"><i class="fa fa-twitter"></i></a>
-            <a href="https://flickr.com/photos/pxddn/"><i class="fa fa-flickr"></i></a>
-            <a href="https://www.linkedin.com/in/ajmendez"><i class="fa fa-linkedin"></i></a>
-            <a href="https://facebook.com/ajmendez"><i class="fa fa-facebook-square"></i></a>
-            <a href="https://ajmendez.github.io/feed.xml"><i class="fa fa-feed"></i></a>
-            <a href="mailto:ajmendez@jhu.edu"><i class="fa fa-envelope"></i></a>
-        </p>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">About</a></li>
+                <li><a href="/research">Research</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </div>
     </div>
-    
-    <!-- Menu button -->
-    <div id="menuToggle"><i id="menuIcon" class="fa fa-chevron-right fa-chevron-left"></i></div>
 </nav>
-
-
-
-<section id="home" name="home">
-    <div id="headerwrap"></div>
-</section>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: simple
 title: Mendez
 ---
 
@@ -12,24 +12,27 @@ title: Mendez
             
             <hr class="intro-divider">
                 <div class='intro-about row'>
-                    <div class='col-lg-3 col-md-3 col-sm-4 portrait'>
-                        <img class="img-portrait img-responsive img-rounded" src='img/ajmendez2.jpg' />
+                    <div class='col-lg-3 col-lg-offset-2 col-md-3 col-md-offset-2 col-sm-4 portrait'>
+                        <img class="img-portrait img-responsive img-rounded" src='img/ajmendez.jpg' />
                     </div>
-                    <div class='col-lg-9 col-md-9 col-sm-8'>
-                    <p>Hi,  I am Dr. Alexander Mendez, a postdoctoral fellow at The Johns Hopkins University (JHU) working in observational astrophysics using large multi-wavelength data-sets.
-                    I study the relationship between super massive black holes (SMBHs) at different wavelengths, place galaxies within a cosmological context, and disentangle the co-evolution of SMBHs and the galaxies in which they reside.
+                    <div class='col-lg-6 col-md-6 col-sm-8'>
+                    <p>Hi,  I am Alex Mendez, a postdoctoral fellow at The Johns Hopkins University (JHU) working in observational astrophysics using large multi-wavelength datasets.
+                    I study the relationship between super massive black holes (SMBHs) at different wavelengths, to disentangle the co-evolution of SMBHs and the galaxies in which they reside and to place them within a cosmological context.
                     Prior to JHU, I received my doctorate in physics from the <a href="http://ucsd.edu/">University of California, San Diego</a> working with <a href="http://cass.ucsd.edu/~acoil">Professor Alison Coil</a>, and
-                    I received my Batchelor of Science degrees in Mathematics, Physics and Astronomy from the <a href="http://www.washington.edu/">University of Washington</a>. I enjoy coffee, code, and cycling.</p>
+                    I received my Batchelor of Science degrees in Mathematics, Physics and Astronomy from the <a href="http://www.washington.edu/">University of Washington</a>. </p>
+                    
+                    <p>I enjoy coffee, code, and cycling. Also I enjoy photography, but alliteration won.</p>
                 </div>
             </div>
             
             <hr class="intro-divider">
             <ul class="list-inline intro-social-buttons">
-                <li><a href="https://github.com/ajmendez"><i class="fa fa-fw fa-2x fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/ajmendez"><i class="fa fa-fw fa-2x fa-linkedin"></i></span></a>
-                    
-                <li><a href="https://www.flickr.com/photos/pxddn/"><i class="fa fa-fw fa-2x fa-flickr"></i></a></li>
-                <li><a href="https://twitter.com/ajmendez"><i class="fa fa-fw fa-2x fa-twitter "></i></a></li>
+                <li><a href="https://github.com/ajmendez"><i class="fa fa-2x fa-github"></i></a></li>
+                <li><a href="mailto:blue.space@gmail.com"><i class="fa fa-2x fa-envelope"></i></span></a>
+                <li><a href="https://www.linkedin.com/in/ajmendez"><i class="fa fa-2x fa-linkedin"></i></span></a>
+                <li><a href="https://profiles.google.com/bluespace"><i class="fa fa-2x fa-google-plus"></i></span></a>
+                <li><a href="https://www.flickr.com/photos/pxddn/"><i class="fa fa-2x fa-flickr"></i></a></li>
+                <li><a href="https://twitter.com/ajmendez"><i class="fa fa-2x fa-twitter "></i></a></li>
                 
                 
                 </li>
@@ -37,84 +40,3 @@ title: Mendez
         </div>
     </div>
 </div>
-
-{% comment %}
-
-
-
-{% assign post = site.posts.first %}
-{% assign content = post.content %}
-
-<a name="blog"></a>
-<div class="content-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-5 col-sm-6">
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-                <h2 class="section-heading">Latest blog post: <a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <div class="post">{{ post.content }}</div>
-            </div>
-            <div class='more'>
-                <a href="{{ post.url | prepend: site.baseurl | replace: '//','/'}}">[Read More]</a>
-            </div>
-            
-            <!-- <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                <img class="img-responsive" src="img/ipad.png" alt="">
-            </div> -->
-        </div>
-
-    </div>
-</div>
-
-
-
-
-<div id="home">
-  
-  
-  <!-- This loops through the paginated posts -->
-  {% for post in paginator.posts %}
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <p class="author">
-      <span class="date">{{ post.date | date_to_long_string }}</span>
-    </p>
-    <div class="col-lg-offset-1 col-lg-10">
-        {{ post.excerpt }}
-        <div class='more'>
-            <a href={{ post.url | prepend: site.baseurl | replace: '//','/'}}>[Read More]</a>
-        </div>
-    </div>
-  {% endfor %}
-  
-  
-  
-  {% if paginator.total_pages > 1 %}
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-    {% else %}
-      <span>&laquo; Prev</span>
-    {% endif %}
-
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <em>{{ page }}</em>
-      {% elsif page == 1 %}
-        <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-      {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-      {% endif %}
-    {% endfor %}
-
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-    {% else %}
-      <span>Next &raquo;</span>
-    {% endif %}
-  </div>
-  {% endif %}
-</div>
-
-
-{% endcomment %}

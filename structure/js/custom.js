@@ -1,11 +1,8 @@
 /*global jQuery:false */
 (function ($) {
-
-
 	$(window).load(function(){
       $("#navigation").sticky({ topSpacing: 0 });
     });
-	
     
     var h = $(window).height();
     $('#intro').css('height', h-50+'px');
@@ -17,7 +14,6 @@
 	  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
 	});	
 
-	
 	//jQuery to collapse the navbar on scroll
 	$(window).scroll(function() {
 		if ($(".navbar").offset().top > 50) {
@@ -26,7 +22,7 @@
 			$(".navbar-fixed-top").removeClass("top-nav-collapse");
 		}
 	});
-	
+    
 	//jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
 		$('.navbar-nav li a').bind('click', function(event) {
@@ -51,35 +47,24 @@
 
 	//nivo lightbox
 	$('.astronomer-img a').nivoLightbox({
-		effect: 'fadeScale',                             // The effect to use when showing the lightbox
-		theme: 'default',                           // The lightbox theme to use
-		keyboardNav: true,                          // Enable/Disable keyboard navigation (left/right/escape)
-		clickOverlayToClose: true,                  // If false clicking the "close" button will be the only way to close the lightbox
-		onInit: function(){},                       // Callback when lightbox has loaded
-		beforeShowLightbox: function(){},           // Callback before the lightbox is shown
-		afterShowLightbox: function(lightbox){},    // Callback after the lightbox is shown
-		beforeHideLightbox: function(){},           // Callback before the lightbox is hidden
-		afterHideLightbox: function(){},            // Callback after the lightbox is hidden
-		onPrev: function(element){},                // Callback when the lightbox gallery goes to previous item
-		onNext: function(element){},                // Callback when the lightbox gallery goes to next item
-		errorMessage: 'The requested content cannot be loaded. Please try again later.' // Error message when content can't be loaded
+		effect: 'fadeScale',
+		theme: 'default',
+		keyboardNav: true,
+		clickOverlayToClose: true,
+		errorMessage: 'The requested content cannot be loaded. Please try again later.'
 	});
     
 	$('#movie').nivoLightbox({
-    effect: 'fadeScale',                             // The effect to use when showing the lightbox
-    theme: 'default',                             // The lightbox theme to use
-    keyboardNav: true,                             // Enable/Disable keyboard navigation (left/right/escape)
-    clickOverlayToClose: true,                    // If false clicking the "close" button will be the only way to close the lightbox
+    effect: 'fadeScale',
+    theme: 'default',
+    keyboardNav: true,
+    clickOverlayToClose: true,
     beforeShowLightbox: function(){
-        // $('#particles-js').pJS.particles.move = false;
         pJSDom[0].pJS.particles.move.enable = false;
-    },             // Callback before the lightbox is shown
-    errorMessage: 'The requested content cannot be loaded. Please try again later.', // Error message when content can't be loaded
+    },
+    errorMessage: 'The requested content cannot be loaded. Please try again later.',
     videoAutoplay: true,
-});
-    
-    
-    
+    });
     
 	jQuery('.appear').appear();
 	jQuery(".appear").on("appear", function(data) {

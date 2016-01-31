@@ -114,10 +114,13 @@ a.hover {
 }
 
 .intro-divider {
-    width: 400px;
+    width: 450px;
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
+
+
+
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
@@ -139,6 +142,9 @@ a.hover {
 
 
 @media screen and (max-width: 481px) {
+    .intro-divider {
+        width: 280px;
+    }
     .intro-message {
         padding-left: 10px;
     }

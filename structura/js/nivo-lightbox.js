@@ -221,7 +221,8 @@
                         frameborder: 0,
                         vspace: 0,
                         hspace: 0,
-                        scrolling: 'auto'
+                        scrolling: 'auto',
+                        allowfullscreen:1,
                     });
                     content.html(iframeVideo);
                     iframeVideo.load(function(){ content.removeClass('nivo-lightbox-loading'); });

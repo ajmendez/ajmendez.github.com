@@ -152,8 +152,8 @@
         processContent: function(content, link){
             var $this = this,
                 href = link.attr('href'),
-                video = href.match(/(youtube|youtu|vimeo)\.(com|be)\/(watch\?v=([\w-]+)|([\w-]+))/);
-
+                video = href.match(/(youtube|youtu|vimeo)\.(com|be)\/((watch\?v=|embed\/|)([\w-=\?&]+))/);
+            
             content.html('').addClass('nivo-lightbox-loading');
 
             // Is HiDPI?
@@ -195,7 +195,7 @@
                     classTerm = 'nivo-lightbox-video';
 
                 if(video[1] == 'youtube'){
-                    src = 'http://www.youtube.com/embed/'+ video[4];
+                    src = 'http://www.youtube.com/embed/'+ video[5];
                     classTerm = 'nivo-lightbox-youtube';
                 }
                 if(video[1] == 'youtu'){
@@ -210,11 +210,11 @@
                 
                 
                 if(src){
-                    if (this.options.videoAutoplay) {
-                        // Works for both youtube and vimeo videos
-                        src += '?autoplay=1'
+                    // if the ? was stripped by the capture of v
+                    // replace the first amp with ? for proper link
+                    if(src.indexOf('?')==-1){
+                        src = src.replace('&','?')
                     }
-                    
                     var iframeVideo = $('<iframe>', {
                         src: src,
                         'class': classTerm,

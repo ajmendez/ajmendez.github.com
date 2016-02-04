@@ -611,6 +611,8 @@ hr.bold {
 	color: #fff;
 }
 
+
+
 .btn-min-block {
     min-width: 170px;
     line-height: 26px;
@@ -639,6 +641,10 @@ hr.bold {
     margin-top:10px;
     text-align: justify;
     text-justify: inter-word;
+}
+
+.about > p {
+    padding-bottom: 20px;
 }
 
 /*.about h3 {

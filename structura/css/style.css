@@ -646,6 +646,22 @@ hr.bold {
 .about > p {
     padding-bottom: 20px;
 }
+@media screen and (max-width: 481px) {
+    .about > p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .support-content > p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+/*    #astronomers  > div > p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }*/
+}
+
+
 
 /*.about h3 {
     clear:right;

@@ -7,16 +7,35 @@
 var layer1 = L.tileLayer(
     'http://{s}.legacysurvey.org/viewer/{id}/{ver}/{z}/{x}/{y}.jpg',{
     id:'unwise-w1w2-tiles',
+    subdomains:'abcd',
     ver:'1',
     attribution:'UNWISE',
 });
 var layer2 = L.tileLayer(
     'http://{s}.legacysurvey.org/viewer/static/tiles/{id}/{ver}/{z}/{x}/{y}.jpg',{
         id:'sdssco',
+        subdomains:'abcd',
         ver:'1',
         opacity:0.7,
         attribution:'SDSS | Legacy Survey',
 });
+//
+// var layer2 = L.tileLayer(
+//     'http://{s}.legacysurvey.org/viewer/static/tiles/{id}/{ver}/{z}/{x}/{y}.jpg',{
+//         id:'decals-dr2',
+//         subdomains:'abcd',
+//         ver:'2',
+//         opacity:0.9,
+//         attribution:'SDSS | Legacy Survey',
+// });
+// var layer2 = L.tileLayer('https://mts{s}.google.com/vt/lyrs=h@186112443&hl=x-local&src=app&x={x}&y={y}&z={z}&s=Galile', {
+//     subdomains: '0123',
+//     attribution: '&copy; Google Maps',
+//     zIndex: 4
+// })
+
+
+
 // var layer_mellinger = L.tileLayer('{id}/{z}/{x}/{y}.png', {
 //     id:'mellinger',
 //     attribution:'Mellinger',
@@ -45,10 +64,12 @@ var map = L.map('map', {
     zoom: zoom,
     minZoom:0, 
     maxZoom:7,
+    continuousWorld: false,
+    noWrap: true,
     // unloadInvisibleTiles: true,
     // worldCopyJump: false,
     // continuousWorld: false,
-    noWrap: true,
+    // noWrap: true,
 });
 // var map2 = L.map('map2', {
 //     layers: [layer2],

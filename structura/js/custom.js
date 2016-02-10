@@ -45,14 +45,14 @@
 		});
 	});
 
-	//nivo lightbox
-	$('.astronomer-img a').nivoLightbox({
-		effect: 'fadeScale',
-		theme: 'default',
-		keyboardNav: true,
-		clickOverlayToClose: true,
-		errorMessage: 'The requested content cannot be loaded. Please try again later.'
-	});
+    // //nivo lightbox
+    // $('.astronomer-img a').nivoLightbox({
+    //     effect: 'fadeScale',
+    //     theme: 'default',
+    //     keyboardNav: true,
+    //     clickOverlayToClose: true,
+    //     errorMessage: 'The requested content cannot be loaded. Please try again later.'
+    // });
     
 	$('#movie').nivoLightbox({
     effect: 'fadeScale',
@@ -60,7 +60,11 @@
     keyboardNav: true,
     clickOverlayToClose: true,
     beforeShowLightbox: function(){
-        pJSDom[0].pJS.particles.move.enable = false;
+        try {
+            pJSDom[0].pJS.particles.move.enable = false;
+        } catch (ignore) {
+        };
+        
     },
     errorMessage: 'The requested content cannot be loaded. Please try again later.',
     videoAutoplay: true,

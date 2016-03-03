@@ -35,7 +35,7 @@
         fluidSpeed: 500,
         dotsSpeed: 100,
         dots: dots,
-        startPosition:1,
+        // startPosition:1,
         // dotData: '<i class="fa fa-circle"></i>',
         // autoHeight: true,
         

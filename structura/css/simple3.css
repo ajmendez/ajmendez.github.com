@@ -166,6 +166,8 @@ hr {
     width: 100%;
     height: auto !important;
     white-space:nowrap;
+    background-color:black;
+    z-index: 9999;
 }
 
 .post{
@@ -341,6 +343,7 @@ hr {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color:rgba(128,128,128,0.2);
+    z-index: 9999;
 }
 .link-info {
     color:white;

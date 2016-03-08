@@ -1,6 +1,6 @@
 /* ---- particles.js config ---- */
 
-particlesJS("particles-js", {
+particlesJS("particles", {
   "particles": {
     "number": {
       "value": 200,
@@ -56,9 +56,10 @@ particlesJS("particles-js", {
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      // "enable": false,
+      "speed": 0.2,
       "direction": "none",
-      "random": false,
+      "random": true,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
@@ -108,6 +109,6 @@ particlesJS("particles-js", {
       }
     }
   },
-  "retina_detect": true
+  "retina_detect": false
 });
 // requestAnimationFrame(update);

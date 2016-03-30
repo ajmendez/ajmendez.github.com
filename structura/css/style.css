@@ -208,18 +208,18 @@ footer{
 .owl-prev  {
     position: absolute;
     left: 10px;
-    bottom: 0px;
+    bottom: 50px;
 /*    padding: 30px;*/
 }
 .owl-next {
     position: absolute;
     right: 10px;
-    bottom: 0px;
+    bottom: 50px;
 /*    padding: 30px;*/
 }
 .owl-dots {
     position: absolute;
-    bottom: 10px;
+    bottom: 40px;
     left: 50%;
     transform: translate(-50%, 0);
 /*    padding:30px;*/
@@ -227,7 +227,9 @@ footer{
 
 
 
-
+#information {
+    padding-bottom:50px;
+}
 
 
 .wrapper {
@@ -263,7 +265,8 @@ footer{
 .image-wrapper img {
     display: block;
     margin: 0 auto;
-    height: 90vh;
+    height: 80vh;
+    padding-bottom: 00vh;
 }
 
 
@@ -274,33 +277,29 @@ footer{
 
 
 .image-caption {
-    position: absolute;
+    position:relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+/*    position: absolute;
     bottom: 30px;
-    right:50px;
+    left: 0px;*/
     
     text-align: justify;
-    background-color:rgba(0,0,0,0.5);
-    border-radius:10px;
-    width:50%;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    width:80%;
 /*    padding: 0 20%;*/
 }
 
-@media screen and (max-width: 800px) {
-    .image-caption {
-        width:800px;
-    }
-}
-@media screen and (min-width: 400px) {
-    .image-caption {
-        width:400px;
-    }
-}
+
 
 
 .image-caption > p {
 /*    padding: 5px;*/
     margin: 10px;
     color: white;
+    text-align:center;
 }
 
 
@@ -427,12 +426,3 @@ cursor: pointer;
 }
 
 
-
-.archive_posts {
-margin-left: 1em;
-margin-top: 0;
-margin-bottom: 1em;
-list-style: square url('http://www.webbossuk.com/admin/images/reply-arrow.png');
-font-weight: normal;
-cursor: pointer;
-}

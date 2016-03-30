@@ -64,12 +64,13 @@ hr {
 }
 
 .navbar {
+    margin-top:-50px;
     margin-bottom: 0;
     border:0px solid;
     border-color: white;
-    background-color: black;
+    background-color: rgba(0,0,0,0.65);
     border-radius: 0px;
-    border-bottom:1px solid;
+    border-bottom:0px solid black;
 }
 
 .navbar-brand {
@@ -115,10 +116,11 @@ footer{
 
 
 #intro {
-    height: calc(100% - 50px);
-    height: -o-calc(100% - 50px); /* opera */
-    height: -webkit-calc(100% - 50px); /* google, safari */
-    height: -moz-calc(100% - 50px); /* firefox */
+    height:100%;
+/*    height: calc(100% - 50px);*/
+/*    height: -o-calc(100% - 50px); /* opera */*/
+/*    height: -webkit-calc(100% - 50px); /* google, safari */*/
+/*    height: -moz-calc(100% - 50px); /* firefox */*/
 }
 
 .hero {
@@ -127,18 +129,8 @@ footer{
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover; 
-
-/*    vertical-align:middle;*/
-/*    padding-top:50%;*/
     width:100%;
     display:table;
-
-    
-
-    
-/*    display:flex; */
-/*    align-items: center;*/
-/*    justify-content: center;*/
 }
 .hero-align {
     display: table-cell;
@@ -198,28 +190,24 @@ footer{
 /* CAROUSAL */
 
 .owl-carousel {
-
 }
 
 .owl-nav {
-/*        padding:30px;*/
 }
 
 .owl-prev  {
     position: absolute;
-    left: 10px;
-    bottom: 50px;
-/*    padding: 30px;*/
+    left: 20px;
+    bottom: 0px;
 }
 .owl-next {
     position: absolute;
-    right: 10px;
-    bottom: 50px;
-/*    padding: 30px;*/
+    right: 20px;
+    bottom: 0px;
 }
 .owl-dots {
     position: absolute;
-    bottom: 40px;
+    bottom: 10px;
     left: 50%;
     transform: translate(-50%, 0);
 /*    padding:30px;*/
@@ -265,8 +253,9 @@ footer{
 .image-wrapper img {
     display: block;
     margin: 0 auto;
-    height: 80vh;
-    padding-bottom: 00vh;
+    padding-top:50px;
+    height: 100vh;
+    
 }
 
 
@@ -277,6 +266,7 @@ footer{
 
 
 .image-caption {
+    display:none;
     position:relative;
     top: 0px;
     left: 50%;
@@ -374,9 +364,8 @@ footer{
     
 .coneimg {
     position: absolute;
-    left: -50%;
-/*    top: 0p;*/
-    width: 150%;
+    left: -60%;
+    width: 160%;
     
 }
     
@@ -384,11 +373,19 @@ footer{
 
 .infolinks {
     color: white;
-    padding-top: 140px;
+    padding-top: 100px;
+}
+.infocaption {
+        color:white;
+/*    display: inline;
+    position:relative;
+    right: 50px;
+    bottom: 50px;
+*/
 }
 
 .infoheader {
-    margin-left: 1em;
+    margin-left: 3em;
     cursor: pointer;
     list-style: none;
     padding-bottom:20px;
@@ -398,7 +395,8 @@ footer{
   font-family: 'FontAwesome';
   float: left;
   margin-left: -1.5em;
-  color: white-space: normal;;
+    color: #1a8cff;
+/*  color: white-space: normal;;*/
 }
 
 
@@ -406,6 +404,7 @@ footer{
 .infoheader h3 {
     padding:0;
     margin: 0;
+    color: #1a8cff;
 }
 
 .infoexpand {

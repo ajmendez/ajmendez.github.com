@@ -1,11 +1,12 @@
 /*global jQuery:false */
 (function ($) {
 	$(window).load(function(){
-      $("#navigation").sticky({ topSpacing: 0 });
+      $("#navigation").sticky({ topSpacing: 50 });
     });
     
     var h = $(window).height();
     var w = $(window).width();
+    // $('#intro').css('top', 50+'px');
     // $('#intro').css('height', h-50+'px');
     // $('.image-wrapper img').css('height', h-100+'px');
     

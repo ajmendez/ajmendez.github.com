@@ -53,7 +53,11 @@ hr {
 
 
 
-
+.excite {
+    color: white;
+    -vendor-animation-duration: 2s;
+    -vendor-animation-delay: 5s;
+}
 
 
 /* NAV */
@@ -160,6 +164,7 @@ footer{
     font-weight: 100;
     font-size: 16px; 
     margin: 0;
+    color:white;
 }
 
 

@@ -6,7 +6,7 @@ particlesJS("particles", {
       "value": 200,
       "density": {
         "enable": true,
-        "value_area": 1200
+        "value_area": 700
       }
     },
     "color": {
@@ -18,45 +18,36 @@ particlesJS("particles", {
         "width": 0,
         "color": "#000000"
       },
-      "polygon": {
-          "nb_sides": 12
-      },
-      // "image": {
-      //   "src": "img/github.svg",
-      //   "width": 100,
-      //   "height": 100
-      // }
     },
     "opacity": {
-      "value": 0.5,
-      "random": false,
+      "value": 0.5839692548078818,
+      "random": true,
       "anim": {
         "enable": false,
         "speed": 1,
-        "opacity_min": 0.1,
+        "opacity_min": 0,
         "sync": false
       }
     },
     "size": {
-      "value": 3,
-      "random": true,
+      "value": 1.5,
+      "random": false,
       "anim": {
         "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
+        "speed": 19.18081918081918,
+        "size_min": 0.3,
         "sync": false
       }
     },
     "line_linked": {
       "enable": true,
-      "distance": 150,
+      "distance": 120,
       "color": "#ffffff",
-      "opacity": 0.4,
+      "opacity": 0.22,
       "width": 1
     },
     "move": {
       "enable": true,
-      // "enable": false,
       "speed": 0.2,
       "direction": "none",
       "random": true,
@@ -65,8 +56,8 @@ particlesJS("particles", {
       "bounce": false,
       "attract": {
         "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
+        "rotateX": 100,
+        "rotateY": 100
       }
     }
   },
@@ -78,27 +69,27 @@ particlesJS("particles", {
         "mode": "grab"
       },
       "onclick": {
-        "enable": true,
-        "mode": "pause"
+        "enable": false,
+        "mode": "repulse"
       },
       "resize": true
     },
     "modes": {
       "grab": {
-        "distance": 140,
+        "distance": 109.63042366068159,
         "line_linked": {
           "opacity": 1
         }
       },
       "bubble": {
-        "distance": 400,
-        "size": 40,
+        "distance": 250,
+        "size": 0,
         "duration": 2,
-        "opacity": 8,
+        "opacity": 0,
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
+        "distance": 400,
         "duration": 0.4
       },
       "push": {
@@ -109,6 +100,6 @@ particlesJS("particles", {
       }
     }
   },
-  "retina_detect": false
+  "retina_detect": true
 });
 // requestAnimationFrame(update);

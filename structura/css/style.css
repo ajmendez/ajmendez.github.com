@@ -52,11 +52,53 @@ hr {
 }
 
 
-
+@keyframes fadeIn { 
+    10%   { opacity:0; }
+    90%  { opacity:1; }
+    100% { opacity:0; } 
+}
+@keyframes fadeIn2 { 
+    30%   { opacity:0; }
+    90%  { opacity:1; }
+    100% { opacity:0; } 
+}
+@keyframes fadeIn3 { 
+    60%   { opacity:0; }
+    90%  { opacity:1; }
+    100% { opacity:0; } 
+}
 .excite {
     color: white;
-    -vendor-animation-duration: 2s;
-    -vendor-animation-delay: 5s;
+    position: absolute;
+    opacity: 0;
+}
+
+.excite1 {
+    right: 30%;
+    top: 10%;
+    -webkit-animation: fadeIn 9s infinite;
+    -moz-animation: fadeIn 9s infinite;
+    -o-animation: fadeIn 9s infinite;
+    animation: fadeIn 9s infinite;
+}
+
+
+.excite2 {
+    right: 20%;
+    top: 20%;
+    -webkit-animation: fadeIn2 10s infinite;
+    -moz-animation: fadeIn2 10s infinite;
+    -o-animation: fadeIn2 10s infinite;
+    animation: fadeIn2 10s infinite;
+}
+
+.excite3 {
+    right: 10%;
+    top: 30%;
+    -webkit-animation: fadeIn3 13s infinite;
+    -moz-animation: fadeIn3 13s infinite;
+    -o-animation: fadeIn3 13s infinite;
+    animation: fadeIn3 13s infinite;
 }
 
 
@@ -128,13 +170,15 @@ footer{
 }
 
 .hero {
-    background: url(../img/hero-bg2.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover; 
+    background: url(../img/hero-bg2.jpg) no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+/*    background-color: transparent;*/
     width:100%;
     display:table;
+/*      z-index:-1;*/
 }
 .hero-align {
     display: table-cell;
@@ -148,6 +192,9 @@ footer{
 #youtube {
     display: inline-block; 
     width:150px;
+    position:relative;
+    z-index:9999;
+    
 }
 
 #title { 
@@ -169,12 +216,22 @@ footer{
 
 
 #particles {
-  position: fixed;
+/*  position: fixed;*/
+    position:absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   background-color: transparent;
+/*  -webkit-transform:translateZ(-1px);
+  -moz-transform:translateZ(-1px);
+  -o-transform:translateZ(-1px);
+  transform:translateZ(-1px);
+  z-index:-1;*/
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .particles-canvas {
@@ -222,6 +279,8 @@ footer{
 
 #information {
     padding-bottom:50px;
+    z-index: 0;
+    background-color:black;
 }
 
 
@@ -231,6 +290,7 @@ footer{
     white-space:nowrap;
     background-color:black;
     z-index: 9999;
+    background-color:black;
 }
 
 .post{

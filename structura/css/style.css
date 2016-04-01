@@ -53,7 +53,7 @@ hr {
 
 
 @keyframes fadeIn { 
-    10%   { opacity:0; }
+    00%   { opacity:0; }
     90%  { opacity:1; }
     100% { opacity:0; } 
 }
@@ -74,18 +74,20 @@ hr {
 }
 
 .excite1 {
-    right: 30%;
+    left: 10%;
     top: 10%;
-    -webkit-animation: fadeIn 9s infinite;
-    -moz-animation: fadeIn 9s infinite;
-    -o-animation: fadeIn 9s infinite;
-    animation: fadeIn 9s infinite;
+    text-align:left;
+    -webkit-animation: fadeIn 10s infinite;
+    -moz-animation: fadeIn 10s infinite;
+    -o-animation: fadeIn 10s infinite;
+    animation: fadeIn 10s infinite;
 }
 
 
 .excite2 {
-    right: 20%;
-    top: 20%;
+    left: 40%;
+    top: 10%;
+    text-align:center;
     -webkit-animation: fadeIn2 10s infinite;
     -moz-animation: fadeIn2 10s infinite;
     -o-animation: fadeIn2 10s infinite;
@@ -94,11 +96,12 @@ hr {
 
 .excite3 {
     right: 10%;
-    top: 30%;
-    -webkit-animation: fadeIn3 13s infinite;
-    -moz-animation: fadeIn3 13s infinite;
-    -o-animation: fadeIn3 13s infinite;
-    animation: fadeIn3 13s infinite;
+    top: 10%;
+    text-align:right;
+    -webkit-animation: fadeIn3 10s infinite;
+    -moz-animation: fadeIn3 10s infinite;
+    -o-animation: fadeIn3 10s infinite;
+    animation: fadeIn3 10s infinite;
 }
 
 
@@ -172,6 +175,7 @@ footer{
 
 .hero {
 /*    background: url(../img/hero-bg2.jpg) no-repeat center center ;*/
+    background: url(../img/bg_stripe.png) no-repeat center center ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

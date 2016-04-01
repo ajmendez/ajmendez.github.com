@@ -42,20 +42,15 @@
     errorMessage: 'The requested content cannot be loaded. Please try again later.',
     videoAutoplay: true,
     });
-	$('#cone').nivoLightbox({
+    
+    
+    
+	$('#conebox').nivoLightbox({
     effect: 'fadeScale',
     theme: 'default',
     keyboardNav: true,
     clickOverlayToClose: true,
-    beforeShowLightbox: function(){
-        try {
-            pJSDom[0].pJS.particles.move.enable = false;
-        } catch (ignore) {
-        };
-        
-    },
     errorMessage: 'The requested content cannot be loaded. Please try again later.',
-    videoAutoplay: true,
     });
     
     

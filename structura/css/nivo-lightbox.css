@@ -42,8 +42,8 @@
 	left: 0;
 	width: 100%;
 	z-index: 99999;
-/*    text-align: center;*/
-    text-align:justified;
+    text-align: center;
+/*    text-align:justified;*/
 }
 .nivo-lightbox-nav { display: none; }
 .nivo-lightbox-prev {

@@ -102,6 +102,7 @@ hr {
 }
 
 
+
 /* NAV */
 
 #navigation {
@@ -170,7 +171,7 @@ footer{
 }
 
 .hero {
-    background: url(../img/hero-bg2.jpg) no-repeat center center ;
+/*    background: url(../img/hero-bg2.jpg) no-repeat center center ;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

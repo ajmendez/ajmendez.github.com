@@ -42,6 +42,22 @@
     errorMessage: 'The requested content cannot be loaded. Please try again later.',
     videoAutoplay: true,
     });
+	$('#cone').nivoLightbox({
+    effect: 'fadeScale',
+    theme: 'default',
+    keyboardNav: true,
+    clickOverlayToClose: true,
+    beforeShowLightbox: function(){
+        try {
+            pJSDom[0].pJS.particles.move.enable = false;
+        } catch (ignore) {
+        };
+        
+    },
+    errorMessage: 'The requested content cannot be loaded. Please try again later.',
+    videoAutoplay: true,
+    });
+    
     
     
     var owl = $('.owl-carousel');
@@ -111,10 +127,10 @@
     
     
     
-    $('.infoexpand').hide();
+    // $('.infoexpand').hide();
 
-    $('.infoheader').click(function() {
-        $(this).find('ul').slideToggle();
+    $('.infoheader h3').click(function() {
+        $(this).parent().find('ul').slideToggle();
     });
     
     

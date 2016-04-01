@@ -37,7 +37,8 @@ p {
 }
 
 a {
-    color: #1a8cff;
+/*    color: #1a8cff;*/
+    color:#3499ff;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -443,7 +444,9 @@ footer{
 
 .infolinks {
     color: white;
-    padding-top: 100px;
+    margin-top: 0px;
+    padding-top: 50px;
+    background-color:rgba(0,0,0, 0.5);
 }
 .infocaption {
         color:white;
@@ -456,7 +459,6 @@ footer{
 
 .infoheader {
     margin-left: 3em;
-    cursor: pointer;
     list-style: none;
     padding-bottom:20px;
 }
@@ -470,28 +472,43 @@ footer{
 }
 
 
-
+.infolinks h1 {
+    margin-bottom: 10px;
+}
 .infoheader h3 {
     padding:0;
     margin: 0;
-    color: #1a8cff;
+    color: #3499ff;
+    cursor: pointer;
 }
 
-.infoexpand {
+.infoexpand h3 {
 margin-left: 2em;
 margin-top: 0;
 margin-bottom: 1em;
-list-style-type: none;
 font-size: medium;
 cursor: pointer;
 }
 
+.infoexpand>li {
+    list-style-type: none;
+    margin-left:2em;
+}
 .infoexpand>li:before {
   content: '\f054';
   font-family: 'FontAwesome';
   float: left;
   margin-left: -1.5em;
-  color: white-space: normal;;
+  color: white-space: normal;
+}
+
+.infoexpand>ul>li {
+    margin-left: 3em;
+    list-style-type: none;
+    
+}
+.infoexpand img{
+    width: 150px;
 }
 
 

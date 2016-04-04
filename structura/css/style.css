@@ -439,9 +439,9 @@ footer{
  
 .coneimg {
     position: absolute;
-    left: -60%;
-    width: 160%;
-    content: url('../img/SDSS_cone_notext.png');
+    left: -40%;
+    width: 140%;
+    content: url('../img/sdss_cone_notext.png');
 }
 
 .bglink {
@@ -527,7 +527,15 @@ cursor: pointer;
     
 }
 .infoexpand img{
-    width: 150px;
+    height: 50px;
 }
 
 
+.leftlogo {
+    padding-right: 20px;
+}
+
+.logoimg {
+    text-align:center;
+    padding-bottom: 10px;
+}

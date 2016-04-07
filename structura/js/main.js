@@ -122,8 +122,7 @@
     
     
     
-    // $('.infoexpand').hide();
-
+    $('.infoexpand').hide();
     $('.infoheader h3').click(function() {
         $(this).parent().find('ul').slideToggle();
     });

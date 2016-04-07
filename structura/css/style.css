@@ -268,16 +268,16 @@ footer{
 .owl-prev  {
     position: absolute;
     left: 20px;
-    bottom: 0px;
+    bottom: 50%;
 }
 .owl-next {
     position: absolute;
     right: 20px;
-    bottom: 0px;
+    bottom: 50%;
 }
 .owl-dots {
     position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     left: 50%;
     transform: translate(-50%, 0);
 /*    padding:30px;*/
@@ -299,6 +299,7 @@ footer{
     background-color:black;
     z-index: 9999;
     background-color:black;
+			max-height: 100vh;
 }
 
 .post{
@@ -313,26 +314,46 @@ footer{
     
     min-width:100%;
     max-width:100%;
-    max-height:100%;
+    max-height:100vh;
 /*    margin:20px;*/
 }
+
 .image-wrapper {
 /*    position: relative;*/
 /*    padding-bottom: 79.82%;*/
 /*    height: calc(100% - 60px);*/
 /*    max-width:100%;*/
 /*    max-height:100%;*/
-/*    max-width:100vh;*/
-/*    max-height:100vw;*/
+/*    max-width:100vw;*/
+/*    max-height:100vh;*/
     
 }
 .image-wrapper img {
     display: block;
     margin: 0 auto;
     padding-top:100px;
-    height: auto;
-    width: 100%;
-    max-width: 1500px;
+/*    height: auto;*/
+/*    width: 100%;*/
+	max-height:100%;
+    max-width: 1200px;
+}
+
+
+.item {
+	margin-top:30px;
+	margin-bottom: 40px;
+}
+.item > img {
+	display: block;
+    margin: 0 auto;
+
+	height:auto;
+	width:auto;
+	max-width: 100%;
+	max-height: calc(100vh - 60px);
+    max-height: -o-calc(100vh - 50px); /* opera */
+    max-height: -webkit-calc(100vh - 50px); /* google, safari */
+    max-height: -moz-calc(100vh - 50px); /* firefox */
 }
 
 
@@ -436,9 +457,9 @@ footer{
     list-style-type: square;
 }
 
- 
 .coneimg {
-    position: absolute;
+/*    position: absolute;*/
+	position:relative;
     left: -40%;
     width: 140%;
     content: url('../img/sdss_cone_notext.png');
@@ -450,11 +471,13 @@ footer{
     font-weight: 100;
     font-size: 14px; 
 }
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 850px) {
     .bglink {
         display: none;
     }
     .coneimg {
+		width:100%;
+		left: 0;
         content: url('../img/sdss_cone_text.png');
     }
 }

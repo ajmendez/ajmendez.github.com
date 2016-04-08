@@ -76,7 +76,7 @@ hr {
 
 .excite1 {
     left: 10%;
-    top: 10%;
+    bottom: 10%;
     text-align:left;
     -webkit-animation: fadeIn 10s infinite;
     -moz-animation: fadeIn 10s infinite;
@@ -87,7 +87,7 @@ hr {
 
 .excite2 {
     left: 40%;
-    top: 10%;
+    bottom: 10%;
     text-align:center;
     -webkit-animation: fadeIn2 10s infinite;
     -moz-animation: fadeIn2 10s infinite;
@@ -97,7 +97,7 @@ hr {
 
 .excite3 {
     right: 10%;
-    top: 10%;
+    bottom: 10%;
     text-align:right;
     -webkit-animation: fadeIn3 10s infinite;
     -moz-animation: fadeIn3 10s infinite;
@@ -427,7 +427,9 @@ footer{
 
 
 
-
+#information > .container {
+    padding-top:50px;
+}
 
 
 
@@ -435,7 +437,7 @@ footer{
 
 
 #links {
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 10px;
     background-color:rgba(128,128,128,0.2);
     z-index: 9999;
@@ -460,8 +462,8 @@ footer{
 .coneimg {
 /*    position: absolute;*/
 	position:relative;
-    left: -10%;
-    width: 110%;
+    left: 0%;
+    width: 100%;
 /*    content: url('../img/sdss_cone_notext.png');*/
 }
 

@@ -18,7 +18,7 @@ body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    background-color: #000;
+    background-color: #060606;
 /*    background-color: DimGray;*/
     font-size: 16px;
     line-height: 1.6em;
@@ -288,7 +288,7 @@ footer{
 #information {
     padding-bottom:50px;
     z-index: 0;
-    background-color:black;
+/*    background-color:black;*/
 }
 
 
@@ -296,9 +296,9 @@ footer{
     width: 100%;
     height: auto !important;
     white-space:nowrap;
-    background-color:black;
+/*    background-color:black;*/
     z-index: 9999;
-    background-color:black;
+/*    background-color:black;*/
 			max-height: 100vh;
 }
 
@@ -460,9 +460,9 @@ footer{
 .coneimg {
 /*    position: absolute;*/
 	position:relative;
-    left: -40%;
-    width: 140%;
-    content: url('../img/sdss_cone_notext.png');
+    left: -10%;
+    width: 110%;
+/*    content: url('../img/sdss_cone_notext.png');*/
 }
 
 .bglink {
@@ -475,11 +475,11 @@ footer{
     .bglink {
         display: none;
     }
-    .coneimg {
-		width:100%;
-		left: 0;
+/*    .coneimg {
+        width:100%;
+        left: 0;
         content: url('../img/sdss_cone_text.png');
-    }
+    }*/
 }
 
     

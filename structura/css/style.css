@@ -30,10 +30,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    color: white;
 }
 
 p {
     margin: 0 0 20px;
+    color: white;
 }
 
 a {
@@ -135,6 +137,8 @@ hr {
 
 .nav.navbar-nav>li>a {
     color: #1a8cff;
+    font-weight: 400;
+    
 }
 
 .nav.navbar-nav>li>a:hover {
@@ -157,7 +161,10 @@ hr {
 
 footer{
     height:200px;
-    color:#999;
+    
+}
+footer p {
+    color:#555;
 }
 
 
@@ -286,6 +293,7 @@ footer{
 
 
 #information {
+    padding-top:50px;
     padding-bottom:50px;
     z-index: 0;
 /*    background-color:black;*/
@@ -563,4 +571,11 @@ cursor: pointer;
 .logoimg {
     text-align:center;
     padding-bottom: 10px;
+}
+
+
+
+
+#about {
+    padding-top:50px;
 }

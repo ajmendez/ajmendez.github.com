@@ -60,7 +60,9 @@
     owl.owlCarousel({
         loop:false,
         nav:true,
-        navText:['<i class="fa fa-2x fa-arrow-circle-left"></i>','<i class="fa fa-2x  fa-arrow-circle-right"></i>'],
+        // navText:['<i class="fa fa-2x fa-arrow-circle-left"></i>','<i class="fa fa-2x  fa-arrow-circle-right"></i>'],
+        navText:['<i class="fa fa-5x fa-chevron-left"></i>','<i class="fa fa-5x  fa-chevron-right"></i>'],
+        
         smartSpeed: 600,
         fluidSpeed: 100,
         dotsSpeed: 100,

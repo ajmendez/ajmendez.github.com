@@ -5,12 +5,16 @@
 
  // BASIC MAP STUFF
 var layer1 = L.tileLayer(
-    'http://{s}.legacysurvey.org/viewer/{id}/{ver}/{z}/{x}/{y}.jpg',{
-    id:'unwise-w1w2-tiles',
+    'http://{s}.legacysurvey.org/viewer/static/tiles/{id}/{ver}/{z}/{x}/{y}.jpg',{
+    id:'unwise-neo1',
     subdomains:'abcd',
     ver:'1',
     attribution:'UNWISE',
 });
+
+
+
+
 var layer2 = L.tileLayer(
     'http://{s}.legacysurvey.org/viewer/static/tiles/{id}/{ver}/{z}/{x}/{y}.jpg',{
         id:'sdssco',

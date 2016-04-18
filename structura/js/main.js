@@ -24,6 +24,12 @@
 		} else {
 			$(".navbar-fixed-top").removeClass("top-nav-collapse");
 		}
+		if ($(this).scrollTop() >= h) {
+			$('.navbar-brand').html('<a href="#intro">Into The Distant Sky</a');
+		} else {
+			$('.navbar-brand').html('<i class="fa fa-chevron-down"></i> Scroll to learn about the movie.');
+		};
+			
 	});
     
     
@@ -56,12 +62,13 @@
     
     
     var owl = $('.owl-carousel');
-    var dots = (w > 500);
+    var dots = (w > 650);
     owl.owlCarousel({
         loop:false,
         nav:true,
         // navText:['<i class="fa fa-2x fa-arrow-circle-left"></i>','<i class="fa fa-2x  fa-arrow-circle-right"></i>'],
-        navText:['<i class="fa fa-5x fa-chevron-left"></i>','<i class="fa fa-5x  fa-chevron-right"></i>'],
+        navText:['<i class="fa fa-5x fa-chevron-left"></i><br />Go towards today',
+				 '<i class="fa fa-5x fa-chevron-right"></i><br>Go towards the big bang'],
         
         smartSpeed: 600,
         fluidSpeed: 100,

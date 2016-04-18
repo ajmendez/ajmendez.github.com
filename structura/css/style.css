@@ -294,6 +294,7 @@ footer p {
     position: absolute;
     left:20px;
     bottom:40%;
+    color: #888;
 }
 .rightarrow {
     position:absolute;
@@ -642,7 +643,7 @@ img.hovercone {
 	padding-bottom:50px;
 }
 
-
-img.hovercone:hover, img.hovercone.cover {
+/*img.hovercone:hover, */
+img.hovercone.hover {
 	content: url('../img/sdss_cone_text.png');
 }

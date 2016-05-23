@@ -9,7 +9,9 @@ author :
 url: "https://ajmendez.github.io"
 baseurl: ""
 markdown: redcarpet
-highlighter: pygments
+# highlighter: pygments
+highlighter: rouge
+
 paginate: 5
 paginate_path: "/blog/page:num/"
 
